@@ -1,0 +1,10 @@
+name: 我的第一个CI
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+      - name: 运行自动化任务
+        run: echo "自动化脚本运行成功！"
