@@ -1,0 +1,8 @@
+name: 我的第一个CI
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "自动化脚本运行成功！"
